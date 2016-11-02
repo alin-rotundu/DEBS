@@ -1,26 +1,26 @@
 1. Babinciuc Adela              : *state-of-the-art documentation	
-								  *solutions research doc
-								  *class and package diagrams
-								  *agile meeting presence
+				  *solutions research doc
+				  *class and package diagrams
+				  *agile meeting presence
 								  
 2. Calfa Alexandru              : *state-of-the-art documentation
 
-3. Micu Iustin					: *state-of-the-art documentation
-								  *solutions research discussion
-								  *state and activity diagrams
-								  *agile meeting presence
+3. Micu Iustin			: *state-of-the-art documentation
+				  *solutions research discussion
+				  *state and activity diagrams
+				  *agile meeting presence
 								  
-4. Munteanu Adrian      		: *state-of-the-art documentation
-								  *solutions research discussion
-								  *sequence and use case diagrams
-								  *agile meeting presence
+4. Munteanu Adrian      	: *state-of-the-art documentation
+				  *solutions research discussion
+				  *sequence and use case diagrams
+				  *agile meeting presence
 								  
-5. Muntianu Cristian  		    : *state-of-the-art documentation
-								  *solutions research discussion
-								  *actor diagrams
-								  *agile meeting presence
+5. Muntianu Cristian  		 : *state-of-the-art documentation
+				   *solutions research discussion
+				   *actor diagrams
+				   *agile meeting presence
 								  
-6. Rotundu Alin  				: *state-of-the-art documentation
-								  *solutions research discussion
-								  *collaboration diagrams
-								  *agile meeting presence
+6. Rotundu Alin  		 : *state-of-the-art documentation
+				   *solutions research discussion
+				   *collaboration diagrams
+				   *agile meeting presence
