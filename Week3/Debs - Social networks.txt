@@ -1,11 +1,11 @@
 Project Name : Debs - Social networks
 
 Member Names:
-	1. Babinciuc Adela              :   babinciuc.adela@gmail.com
+	1. Babinciuc Adela              :       babinciuc.adela@gmail.com
 	2. Calfa Alexandru              :	--
-	3. Micu Iustin					: 	iustin.micu@hotmail.com
-	4. Munteanu Adrian      		:	adrian.munteanu@info.uaic.ro
-	5. Muntianu Cristian  		    : 	cristian.muntianu@mambu.com
+	3. Micu Iustin			: 	iustin.micu@hotmail.com
+	4. Munteanu Adrian      	:	adrian.munteanu@info.uaic.ro
+	5. Muntianu Cristian  		: 	cristian.muntianu@mambu.com
 	6. Rotundu Alin                 :	alin.rotundu@gmail.com	
 	
 Coordinators: E. Onica & A. Iftene		
