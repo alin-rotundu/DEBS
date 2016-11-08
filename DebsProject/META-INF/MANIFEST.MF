@@ -6,9 +6,9 @@ Bundle-Version: 0.1.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: com.debs.event.debsEvent,
- com.debs.event.debsEvent.impl,
- com.debs.event.debsEvent.util
+Export-Package: com.debs.model.event.debsEvent,
+ com.debs.model.event.debsEvent.impl,
+ com.debs.model.event.debsEvent.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Eclipse-LazyStart: true

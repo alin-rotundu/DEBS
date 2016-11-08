@@ -1,8 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent.impl;
-
-import com.debs.event.debsEvent.*;
+package com.debs.model.event.debsEvent.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -11,6 +9,8 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import com.debs.model.event.debsEvent.*;
 
 /**
  * <!-- begin-user-doc -->

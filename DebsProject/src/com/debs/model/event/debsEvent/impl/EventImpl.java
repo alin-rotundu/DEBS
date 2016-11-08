@@ -1,9 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent.impl;
-
-import com.debs.event.debsEvent.DebsEventPackage;
-import com.debs.event.debsEvent.Event;
+package com.debs.model.event.debsEvent.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -11,6 +8,9 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import com.debs.model.event.debsEvent.DebsEventPackage;
+import com.debs.model.event.debsEvent.Event;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,9 +20,9 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.impl.EventImpl#getTimestamp <em>Timestamp</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.EventImpl#getUserId <em>User Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.EventImpl#getUserName <em>User Name</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.EventImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.EventImpl#getUserId <em>User Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.EventImpl#getUserName <em>User Name</em>}</li>
  * </ul>
  *
  * @generated

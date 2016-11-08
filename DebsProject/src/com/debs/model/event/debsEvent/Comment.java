@@ -1,6 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent;
+package com.debs.model.event.debsEvent;
 
 
 /**
@@ -12,14 +12,14 @@ package com.debs.event.debsEvent;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Comment#getComment <em>Comment</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Comment#getPost <em>Post</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Comment#getComment <em>Comment</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Comment#getPost <em>Post</em>}</li>
  * </ul>
  *
- * @see com.debs.event.debsEvent.DebsEventPackage#getComment()
+ * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment()
  * @model
  * @generated
  */
@@ -34,14 +34,14 @@ public interface Comment extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Comment Id</em>' attribute.
 	 * @see #setCommentId(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getComment_CommentId()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment_CommentId()
 	 * @model
 	 * @generated
 	 */
 	long getCommentId();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Comment Id</em>' attribute.
@@ -60,14 +60,14 @@ public interface Comment extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Comment</em>' attribute.
 	 * @see #setComment(String)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getComment_Comment()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment_Comment()
 	 * @model
 	 * @generated
 	 */
 	String getComment();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Comment#getComment <em>Comment</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Comment#getComment <em>Comment</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Comment</em>' attribute.
@@ -86,14 +86,14 @@ public interface Comment extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Comment Replied</em>' attribute.
 	 * @see #setCommentReplied(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getComment_CommentReplied()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment_CommentReplied()
 	 * @model
 	 * @generated
 	 */
 	long getCommentReplied();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Comment Replied</em>' attribute.
@@ -112,14 +112,14 @@ public interface Comment extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Post Commented</em>' attribute.
 	 * @see #setPostCommented(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getComment_PostCommented()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment_PostCommented()
 	 * @model
 	 * @generated
 	 */
 	long getPostCommented();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Post Commented</em>' attribute.
@@ -138,14 +138,14 @@ public interface Comment extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Post</em>' reference.
 	 * @see #setPost(Post)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getComment_Post()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getComment_Post()
 	 * @model
 	 * @generated
 	 */
 	Post getPost();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Comment#getPost <em>Post</em>}' reference.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Comment#getPost <em>Post</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Post</em>' reference.

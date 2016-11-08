@@ -1,6 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent;
+package com.debs.model.event.debsEvent;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see com.debs.event.debsEvent.DebsEventFactory
+ * @see com.debs.model.event.debsEvent.DebsEventFactory
  * @model kind="package"
  * @generated
  */
@@ -53,14 +53,14 @@ public interface DebsEventPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	DebsEventPackage eINSTANCE = com.debs.event.debsEvent.impl.DebsEventPackageImpl.init();
+	DebsEventPackage eINSTANCE = com.debs.model.event.debsEvent.impl.DebsEventPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link com.debs.event.debsEvent.impl.EventImpl <em>Event</em>}' class.
+	 * The meta object id for the '{@link com.debs.model.event.debsEvent.impl.EventImpl <em>Event</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see com.debs.event.debsEvent.impl.EventImpl
-	 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getEvent()
+	 * @see com.debs.model.event.debsEvent.impl.EventImpl
+	 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getEvent()
 	 * @generated
 	 */
 	int EVENT = 0;
@@ -102,11 +102,11 @@ public interface DebsEventPackage extends EPackage {
 	int EVENT_FEATURE_COUNT = 3;
 
 	/**
-	 * The meta object id for the '{@link com.debs.event.debsEvent.impl.PostImpl <em>Post</em>}' class.
+	 * The meta object id for the '{@link com.debs.model.event.debsEvent.impl.PostImpl <em>Post</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see com.debs.event.debsEvent.impl.PostImpl
-	 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getPost()
+	 * @see com.debs.model.event.debsEvent.impl.PostImpl
+	 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getPost()
 	 * @generated
 	 */
 	int POST = 1;
@@ -166,11 +166,11 @@ public interface DebsEventPackage extends EPackage {
 	int POST_FEATURE_COUNT = EVENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link com.debs.event.debsEvent.impl.CommentImpl <em>Comment</em>}' class.
+	 * The meta object id for the '{@link com.debs.model.event.debsEvent.impl.CommentImpl <em>Comment</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see com.debs.event.debsEvent.impl.CommentImpl
-	 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getComment()
+	 * @see com.debs.model.event.debsEvent.impl.CommentImpl
+	 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getComment()
 	 * @generated
 	 */
 	int COMMENT = 2;
@@ -258,140 +258,140 @@ public interface DebsEventPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link com.debs.event.debsEvent.Event <em>Event</em>}'.
+	 * Returns the meta object for class '{@link com.debs.model.event.debsEvent.Event <em>Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Event</em>'.
-	 * @see com.debs.event.debsEvent.Event
+	 * @see com.debs.model.event.debsEvent.Event
 	 * @generated
 	 */
 	EClass getEvent();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Timestamp</em>'.
-	 * @see com.debs.event.debsEvent.Event#getTimestamp()
+	 * @see com.debs.model.event.debsEvent.Event#getTimestamp()
 	 * @see #getEvent()
 	 * @generated
 	 */
 	EAttribute getEvent_Timestamp();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Event#getUserId <em>User Id</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Event#getUserId <em>User Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>User Id</em>'.
-	 * @see com.debs.event.debsEvent.Event#getUserId()
+	 * @see com.debs.model.event.debsEvent.Event#getUserId()
 	 * @see #getEvent()
 	 * @generated
 	 */
 	EAttribute getEvent_UserId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Event#getUserName <em>User Name</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Event#getUserName <em>User Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>User Name</em>'.
-	 * @see com.debs.event.debsEvent.Event#getUserName()
+	 * @see com.debs.model.event.debsEvent.Event#getUserName()
 	 * @see #getEvent()
 	 * @generated
 	 */
 	EAttribute getEvent_UserName();
 
 	/**
-	 * Returns the meta object for class '{@link com.debs.event.debsEvent.Post <em>Post</em>}'.
+	 * Returns the meta object for class '{@link com.debs.model.event.debsEvent.Post <em>Post</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Post</em>'.
-	 * @see com.debs.event.debsEvent.Post
+	 * @see com.debs.model.event.debsEvent.Post
 	 * @generated
 	 */
 	EClass getPost();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Post#getPostId <em>Post Id</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Post#getPostId <em>Post Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Post Id</em>'.
-	 * @see com.debs.event.debsEvent.Post#getPostId()
+	 * @see com.debs.model.event.debsEvent.Post#getPostId()
 	 * @see #getPost()
 	 * @generated
 	 */
 	EAttribute getPost_PostId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Post#getPost <em>Post</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Post#getPost <em>Post</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Post</em>'.
-	 * @see com.debs.event.debsEvent.Post#getPost()
+	 * @see com.debs.model.event.debsEvent.Post#getPost()
 	 * @see #getPost()
 	 * @generated
 	 */
 	EAttribute getPost_Post();
 
 	/**
-	 * Returns the meta object for class '{@link com.debs.event.debsEvent.Comment <em>Comment</em>}'.
+	 * Returns the meta object for class '{@link com.debs.model.event.debsEvent.Comment <em>Comment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Comment</em>'.
-	 * @see com.debs.event.debsEvent.Comment
+	 * @see com.debs.model.event.debsEvent.Comment
 	 * @generated
 	 */
 	EClass getComment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Comment#getCommentId <em>Comment Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Comment Id</em>'.
-	 * @see com.debs.event.debsEvent.Comment#getCommentId()
+	 * @see com.debs.model.event.debsEvent.Comment#getCommentId()
 	 * @see #getComment()
 	 * @generated
 	 */
 	EAttribute getComment_CommentId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Comment#getComment <em>Comment</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Comment#getComment <em>Comment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Comment</em>'.
-	 * @see com.debs.event.debsEvent.Comment#getComment()
+	 * @see com.debs.model.event.debsEvent.Comment#getComment()
 	 * @see #getComment()
 	 * @generated
 	 */
 	EAttribute getComment_Comment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Comment#getCommentReplied <em>Comment Replied</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Comment Replied</em>'.
-	 * @see com.debs.event.debsEvent.Comment#getCommentReplied()
+	 * @see com.debs.model.event.debsEvent.Comment#getCommentReplied()
 	 * @see #getComment()
 	 * @generated
 	 */
 	EAttribute getComment_CommentReplied();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.debs.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}'.
+	 * Returns the meta object for the attribute '{@link com.debs.model.event.debsEvent.Comment#getPostCommented <em>Post Commented</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Post Commented</em>'.
-	 * @see com.debs.event.debsEvent.Comment#getPostCommented()
+	 * @see com.debs.model.event.debsEvent.Comment#getPostCommented()
 	 * @see #getComment()
 	 * @generated
 	 */
 	EAttribute getComment_PostCommented();
 
 	/**
-	 * Returns the meta object for the reference '{@link com.debs.event.debsEvent.Comment#getPost <em>Post</em>}'.
+	 * Returns the meta object for the reference '{@link com.debs.model.event.debsEvent.Comment#getPost <em>Post</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Post</em>'.
-	 * @see com.debs.event.debsEvent.Comment#getPost()
+	 * @see com.debs.model.event.debsEvent.Comment#getPost()
 	 * @see #getComment()
 	 * @generated
 	 */
@@ -420,11 +420,11 @@ public interface DebsEventPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link com.debs.event.debsEvent.impl.EventImpl <em>Event</em>}' class.
+		 * The meta object literal for the '{@link com.debs.model.event.debsEvent.impl.EventImpl <em>Event</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see com.debs.event.debsEvent.impl.EventImpl
-		 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getEvent()
+		 * @see com.debs.model.event.debsEvent.impl.EventImpl
+		 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getEvent()
 		 * @generated
 		 */
 		EClass EVENT = eINSTANCE.getEvent();
@@ -454,11 +454,11 @@ public interface DebsEventPackage extends EPackage {
 		EAttribute EVENT__USER_NAME = eINSTANCE.getEvent_UserName();
 
 		/**
-		 * The meta object literal for the '{@link com.debs.event.debsEvent.impl.PostImpl <em>Post</em>}' class.
+		 * The meta object literal for the '{@link com.debs.model.event.debsEvent.impl.PostImpl <em>Post</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see com.debs.event.debsEvent.impl.PostImpl
-		 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getPost()
+		 * @see com.debs.model.event.debsEvent.impl.PostImpl
+		 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getPost()
 		 * @generated
 		 */
 		EClass POST = eINSTANCE.getPost();
@@ -480,11 +480,11 @@ public interface DebsEventPackage extends EPackage {
 		EAttribute POST__POST = eINSTANCE.getPost_Post();
 
 		/**
-		 * The meta object literal for the '{@link com.debs.event.debsEvent.impl.CommentImpl <em>Comment</em>}' class.
+		 * The meta object literal for the '{@link com.debs.model.event.debsEvent.impl.CommentImpl <em>Comment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see com.debs.event.debsEvent.impl.CommentImpl
-		 * @see com.debs.event.debsEvent.impl.DebsEventPackageImpl#getComment()
+		 * @see com.debs.model.event.debsEvent.impl.CommentImpl
+		 * @see com.debs.model.event.debsEvent.impl.DebsEventPackageImpl#getComment()
 		 * @generated
 		 */
 		EClass COMMENT = eINSTANCE.getComment();

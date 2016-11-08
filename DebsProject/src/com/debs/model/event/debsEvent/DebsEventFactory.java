@@ -1,6 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent;
+package com.debs.model.event.debsEvent;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see com.debs.event.debsEvent.DebsEventPackage
+ * @see com.debs.model.event.debsEvent.DebsEventPackage
  * @generated
  */
 public interface DebsEventFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface DebsEventFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	DebsEventFactory eINSTANCE = com.debs.event.debsEvent.impl.DebsEventFactoryImpl.init();
+	DebsEventFactory eINSTANCE = com.debs.model.event.debsEvent.impl.DebsEventFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Event</em>'.

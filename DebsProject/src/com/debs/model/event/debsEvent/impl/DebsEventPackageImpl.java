@@ -1,12 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent.impl;
-
-import com.debs.event.debsEvent.Comment;
-import com.debs.event.debsEvent.DebsEventFactory;
-import com.debs.event.debsEvent.DebsEventPackage;
-import com.debs.event.debsEvent.Event;
-import com.debs.event.debsEvent.Post;
+package com.debs.model.event.debsEvent.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -14,6 +8,12 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import com.debs.model.event.debsEvent.Comment;
+import com.debs.model.event.debsEvent.DebsEventFactory;
+import com.debs.model.event.debsEvent.DebsEventPackage;
+import com.debs.model.event.debsEvent.Event;
+import com.debs.model.event.debsEvent.Post;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,7 +54,7 @@ public class DebsEventPackageImpl extends EPackageImpl implements DebsEventPacka
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see com.debs.event.debsEvent.DebsEventPackage#eNS_URI
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

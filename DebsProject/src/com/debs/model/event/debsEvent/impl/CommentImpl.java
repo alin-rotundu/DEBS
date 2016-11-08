@@ -1,10 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent.impl;
-
-import com.debs.event.debsEvent.Comment;
-import com.debs.event.debsEvent.DebsEventPackage;
-import com.debs.event.debsEvent.Post;
+package com.debs.model.event.debsEvent.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -12,6 +8,10 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import com.debs.model.event.debsEvent.Comment;
+import com.debs.model.event.debsEvent.DebsEventPackage;
+import com.debs.model.event.debsEvent.Post;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,11 +21,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.impl.CommentImpl#getCommentId <em>Comment Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.CommentImpl#getComment <em>Comment</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.CommentImpl#getCommentReplied <em>Comment Replied</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.CommentImpl#getPostCommented <em>Post Commented</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.CommentImpl#getPost <em>Post</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.CommentImpl#getCommentId <em>Comment Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.CommentImpl#getComment <em>Comment</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.CommentImpl#getCommentReplied <em>Comment Replied</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.CommentImpl#getPostCommented <em>Post Commented</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.CommentImpl#getPost <em>Post</em>}</li>
  * </ul>
  *
  * @generated

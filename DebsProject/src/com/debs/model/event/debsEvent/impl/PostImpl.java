@@ -1,15 +1,15 @@
 /**
  */
-package com.debs.event.debsEvent.impl;
-
-import com.debs.event.debsEvent.DebsEventPackage;
-import com.debs.event.debsEvent.Post;
+package com.debs.model.event.debsEvent.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import com.debs.model.event.debsEvent.DebsEventPackage;
+import com.debs.model.event.debsEvent.Post;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,8 +19,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.impl.PostImpl#getPostId <em>Post Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.impl.PostImpl#getPost <em>Post</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.PostImpl#getPostId <em>Post Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.impl.PostImpl#getPost <em>Post</em>}</li>
  * </ul>
  *
  * @generated

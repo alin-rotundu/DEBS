@@ -1,13 +1,13 @@
 /**
  */
-package com.debs.event.debsEvent.util;
-
-import com.debs.event.debsEvent.*;
+package com.debs.model.event.debsEvent.util;
 
 import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+
+import com.debs.model.event.debsEvent.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see com.debs.event.debsEvent.DebsEventPackage
+ * @see com.debs.model.event.debsEvent.DebsEventPackage
  * @generated
  */
 public class DebsEventSwitch {

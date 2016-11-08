@@ -10,7 +10,7 @@
       <!-- @generated debsEvent -->
       <package
             uri="http://www.example.org/debsEvent"
-            class="com.debs.event.debsEvent.DebsEventPackage"
+            class="com.debs.model.event.debsEvent.DebsEventPackage"
             genModel="model/debsEvent.genmodel"/>
    </extension>
 

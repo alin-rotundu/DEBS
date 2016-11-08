@@ -1,6 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent;
+package com.debs.model.event.debsEvent;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Event#getUserId <em>User Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Event#getUserName <em>User Name</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Event#getUserId <em>User Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Event#getUserName <em>User Name</em>}</li>
  * </ul>
  *
- * @see com.debs.event.debsEvent.DebsEventPackage#getEvent()
+ * @see com.debs.model.event.debsEvent.DebsEventPackage#getEvent()
  * @model
  * @generated
  */
@@ -33,14 +33,14 @@ public interface Event extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Timestamp</em>' attribute.
 	 * @see #setTimestamp(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getEvent_Timestamp()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getEvent_Timestamp()
 	 * @model
 	 * @generated
 	 */
 	long getTimestamp();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Event#getTimestamp <em>Timestamp</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Timestamp</em>' attribute.
@@ -59,14 +59,14 @@ public interface Event extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Id</em>' attribute.
 	 * @see #setUserId(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getEvent_UserId()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getEvent_UserId()
 	 * @model
 	 * @generated
 	 */
 	long getUserId();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Event#getUserId <em>User Id</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Event#getUserId <em>User Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>User Id</em>' attribute.
@@ -85,14 +85,14 @@ public interface Event extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Name</em>' attribute.
 	 * @see #setUserName(String)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getEvent_UserName()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getEvent_UserName()
 	 * @model
 	 * @generated
 	 */
 	String getUserName();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Event#getUserName <em>User Name</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Event#getUserName <em>User Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>User Name</em>' attribute.

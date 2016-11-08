@@ -1,6 +1,6 @@
 /**
  */
-package com.debs.event.debsEvent;
+package com.debs.model.event.debsEvent;
 
 
 /**
@@ -12,11 +12,11 @@ package com.debs.event.debsEvent;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.debs.event.debsEvent.Post#getPostId <em>Post Id</em>}</li>
- *   <li>{@link com.debs.event.debsEvent.Post#getPost <em>Post</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Post#getPostId <em>Post Id</em>}</li>
+ *   <li>{@link com.debs.model.event.debsEvent.Post#getPost <em>Post</em>}</li>
  * </ul>
  *
- * @see com.debs.event.debsEvent.DebsEventPackage#getPost()
+ * @see com.debs.model.event.debsEvent.DebsEventPackage#getPost()
  * @model
  * @generated
  */
@@ -31,14 +31,14 @@ public interface Post extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Post Id</em>' attribute.
 	 * @see #setPostId(long)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getPost_PostId()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getPost_PostId()
 	 * @model
 	 * @generated
 	 */
 	long getPostId();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Post#getPostId <em>Post Id</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Post#getPostId <em>Post Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Post Id</em>' attribute.
@@ -57,14 +57,14 @@ public interface Post extends Event {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Post</em>' attribute.
 	 * @see #setPost(String)
-	 * @see com.debs.event.debsEvent.DebsEventPackage#getPost_Post()
+	 * @see com.debs.model.event.debsEvent.DebsEventPackage#getPost_Post()
 	 * @model
 	 * @generated
 	 */
 	String getPost();
 
 	/**
-	 * Sets the value of the '{@link com.debs.event.debsEvent.Post#getPost <em>Post</em>}' attribute.
+	 * Sets the value of the '{@link com.debs.model.event.debsEvent.Post#getPost <em>Post</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Post</em>' attribute.
