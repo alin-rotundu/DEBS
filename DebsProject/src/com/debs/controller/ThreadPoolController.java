@@ -4,25 +4,33 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import com.debs.model.event.debsEvent.ScoresModel;
+import com.debs.service.CommentsService;
 import com.debs.service.PostsService;
 import com.debs.event.debsEvent.util.FileUtils;
 import com.debs.model.event.debsEvent.Post;
 
 public class ThreadPoolController{
   
-    private ExecutorService executor;
+    private ExecutorService postsExecutor;
+    private ExecutorService commentsExecutor;
     
     public ThreadPoolController(){
-        this.executor = Executors.newFixedThreadPool(10);
-        ProcessPosts();
+        this.postsExecutor = Executors.newFixedThreadPool(10);
+        this.commentsExecutor = Executors.newFixedThreadPool(20);
+        Start();
     }
     	
-    private void ProcessPosts(){
+    private void Start(){
     	FileUtils fileUtils = new FileUtils();
     	
     	for (Post p : fileUtils.getAllPosts()) {
-    		 Runnable postWorker = new PostsService(Post p);
-             executor.execute(postWorker);
+    		 Runnable postWorker = new PostsService(p);
+    		 postsExecutor.execute(postWorker);
+		}
+    	
+    	for (Comment c : fileUtils.getAllComments()) {
+   		 	Runnable commentWorker = new CommentsService(c);
+   		 	commentsExecutor.execute(commentWorker);
 		}
     }
 }
