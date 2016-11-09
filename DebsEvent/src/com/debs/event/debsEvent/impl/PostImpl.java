@@ -71,7 +71,7 @@ public class PostImpl extends EventImpl implements Post {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PostImpl() {
+	public PostImpl() {
 		super();
 	}
 

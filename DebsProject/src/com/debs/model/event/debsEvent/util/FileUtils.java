@@ -1,4 +1,4 @@
-package com.debs.event.debsEvent.util;
+package com.debs.model.event.debsEvent.util;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
