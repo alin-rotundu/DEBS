@@ -13,6 +13,7 @@ public class ThreadPoolController{
   
     private ExecutorService postsExecutor;
     private ExecutorService commentsExecutor;
+    private FileUtils fileUtils;
     
     public ThreadPoolController(){
         this.postsExecutor = Executors.newFixedThreadPool(10);
@@ -21,7 +22,7 @@ public class ThreadPoolController{
     }
     	
     private void Start(){
-    	FileUtils fileUtils = new FileUtils();
+    	this.fileUtils = new FileUtils();
     	
     	for (Post p : fileUtils.getAllPosts()) {
     		 Runnable postWorker = new PostsService(p);
