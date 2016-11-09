@@ -16,3 +16,8 @@
  - Null Object - DEBS/DebsProject/nullObject
  - Data Access Object - DEBS/DebsProject/DAO
  - Data Transfer Object - DEBS/DebsProject/DAO
+ 5. Iustin Micu
+ - Thread Pool 
+ 	- DEBS/DebsProject/src/com/debs/controller/ThreadPoolController.java
+	- DEBS/DebsProject/src/com/debs/service/ComentsService.java
+	- DEBS/DebsProject/src/com/debs/service/PostsService.java
