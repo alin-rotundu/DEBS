@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.debs.model.event.debsEvent.Post;
+import com.debs.event.debsEvent.Post;
 @SuppressWarnings("rawtypes")
 public class CommentList implements CustomIterator  {
 	private List<Post> comments;

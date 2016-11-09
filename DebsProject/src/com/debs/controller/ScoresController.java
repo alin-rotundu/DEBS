@@ -1,6 +1,6 @@
 package com.debs.controller;
 
-import com.debs.model.event.debsEvent.Post;
+import com.debs.event.debsEvent.Post;
 import com.debs.model.event.debsEvent.ScoresModel;
 import com.debs.model.event.debsEvent.util.ScoresObserver;
 import com.debs.service.PostsService;

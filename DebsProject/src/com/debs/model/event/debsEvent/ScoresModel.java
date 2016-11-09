@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Observable;
 import java.util.TreeMap;
 
+import com.debs.event.debsEvent.Post;
 import com.debs.util.iterators.PostList;
 
 

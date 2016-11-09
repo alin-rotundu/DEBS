@@ -1,6 +1,10 @@
 1. Adela Babinciuc
  - EMF - DEBS/DebsProject/model/
- - Factory - DEBS/DebsProject/src/com/debs/model/event/debsEvent/impl/DebsEventFactoryImpl.java 
+       - DEBS/DebsEvent
+	   - DEBS/DebsEvent.edit
+	   - DEBS/DebsEvent.editor/
+	   - DEBS/DebsEvent.tests/
+ - Factory - DEBS/DebsEvent/src/com/debs/event/debsEvent/impl/DebsEventFactoryImpl.java
 2. Adrian Munteanu
  - MVC - DEBS/DebsProject/src/com/debs/
  - Observer - DEBS/DebsProject/src/com/debs/model/event/debsEvent/util/ScoresObserver.java

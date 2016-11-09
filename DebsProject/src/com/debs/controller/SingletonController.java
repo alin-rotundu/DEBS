@@ -2,8 +2,8 @@ package com.debs.controller;
 
 import javax.inject.Singleton;
 
-import com.debs.model.event.debsEvent.Post;
-import com.debs.model.event.debsEvent.impl.PostImpl;
+import com.debs.event.debsEvent.Post;
+import com.debs.event.debsEvent.impl.PostImpl;
 
 public class SingletonController {
 
