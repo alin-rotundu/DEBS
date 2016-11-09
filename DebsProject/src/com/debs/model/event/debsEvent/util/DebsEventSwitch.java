@@ -22,6 +22,7 @@ import com.debs.model.event.debsEvent.*;
  * @see com.debs.model.event.debsEvent.DebsEventPackage
  * @generated
  */
+@SuppressWarnings("rawtypes")
 public class DebsEventSwitch {
 	/**
 	 * The cached model package

@@ -1,21 +1,25 @@
 package com.debs.view;
 
-import java.util.List;
+import java.util.Iterator;
 
 import com.debs.model.event.debsEvent.Comment;
 import com.debs.model.event.debsEvent.Post;
-
+import com.debs.util.iterators.CommentList;
+import com.debs.util.iterators.PostList;
+@SuppressWarnings("rawtypes")
 public class ConsoleView {
 	
-	public void displayTop3Posts(List<Post> posts){
-		for(int i = 0; i < 3 && i < posts.size(); i++){
-			System.out.println(i + ". " + posts.get(i).toString());
+	public void displayTop3Posts(PostList posts){
+		Iterator postIterator = posts.createIterator();
+		while(postIterator.hasNext()){
+			System.out.println(((Post)postIterator.next()).toString());
 		}
 	}
 	
-	public void displayTopKComments(List<Comment> comments, int k){
-		for(int i = 0; i < 3 && i < comments.size() && i < k; i++){
-			System.out.println(i + ". " + comments.get(i).toString());
+	public void displayTopKComments(CommentList comments, int k){
+		Iterator commentsIterator = comments.createIterator();
+		for(int i = 0; i<k && commentsIterator.hasNext(); i++){
+			System.out.println(((Comment)commentsIterator.next()).toString());
 		}
 	}
 }

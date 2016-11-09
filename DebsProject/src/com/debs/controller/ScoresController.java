@@ -10,6 +10,7 @@ public class ScoresController {
 
 	private ScoresModel scoresModel;
 	
+	@SuppressWarnings("unused")
 	private ConsoleView consoleView;
 
 	private PostsService postsService;
@@ -33,7 +34,4 @@ public class ScoresController {
 		// TODO update all scores
 	}
 	
-	
-
-
 }
