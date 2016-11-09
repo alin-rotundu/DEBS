@@ -1,11 +1,12 @@
 package com.debs.model.event.debsEvent;
 
-import java.util.ArrayList;
+
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 import java.util.Observable;
 import java.util.TreeMap;
+
+import com.debs.util.iterators.PostList;
 
 
 
@@ -18,8 +19,8 @@ public class ScoresModel extends Observable {
 	private TreeMap<Long, Long> postScoreMap;
 
 
-	public List<Post> getFirst3Posts(){
-		List<Post> posts = new ArrayList<>();
+	public PostList getFirst3Posts(){
+		PostList posts = new PostList();
 		Collection<Long> values = postScoreMap.values();
 
 		for(int i = 0; i < 3 && i < values.size(); i++){
