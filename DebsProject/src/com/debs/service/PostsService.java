@@ -19,8 +19,8 @@ public class PostsService implements Runnable {
     	Map<Long, Post> postMap = scoresModel.getPostMap();
     	Map<Long, Long> postScoreMap = scoresModel.getPostScoreMap();
     	
-    	postMap.put(post.Id, post);
-    	postScoreMap.put(getPostScore(post), post.Id);
+    	postMap.put(post.post_id, post);
+    	postScoreMap.put(getPostScore(post), post.post_id);
     	
     	processTimeWindow(post);
     	updatePostScoreMap(postScoreMap, post);
@@ -34,7 +34,7 @@ public class PostsService implements Runnable {
     	// process the time window
     }
     
-    private long updatePostScoreMap(Map<Long, Long> postScoreMap, Post post){
+    private long updatePostScoreMap(Map<Long, Long> postScoreMap, Long postId){
     	// update the post after its score has changed
     }
 }
