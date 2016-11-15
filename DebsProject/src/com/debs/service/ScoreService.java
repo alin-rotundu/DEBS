@@ -7,7 +7,8 @@ public class ScoreService {
 	private ScoresModel scoresModel = new ScoresModel();
 	
 	public Long getPostScore(Long postId){
-		return scoresModel.getPostMap().get(postId).getScore();
+//		return scoresModel.getPostMap().get(postId).getScore();
+		return 10L;
 	}
 	
 	public Long getCommentScore(Long commentId){

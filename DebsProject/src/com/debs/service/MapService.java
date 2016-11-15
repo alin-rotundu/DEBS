@@ -1,13 +1,24 @@
 package com.debs.service;
 
+import java.util.ArrayList;
+
 import com.debs.model.Post;
 import com.debs.model.ScoresModel;
 
 public class MapService {
 
-	private ScoresModel scoresModel = new ScoresModel();
+	private ScoresModel scoresModel;
 
 	public void updatePostScoreMap(Long newScore, Long oldScore, Long postId) {
+		
+		if (oldScore != null && !scoresModel.getPostScoreMap().containsKey(oldScore)){
+			scoresModel.getPostScoreMap().put(oldScore, new ArrayList<Long>());
+		}
+		
+		if (newScore != null && !scoresModel.getPostScoreMap().containsKey(newScore)){
+			scoresModel.getPostScoreMap().put(newScore, new ArrayList<Long>());
+		}
+		
 		if (oldScore == null){
 			scoresModel.getPostScoreMap().get(newScore).add(postId);
 		} else if (!newScore.equals(oldScore)) {
