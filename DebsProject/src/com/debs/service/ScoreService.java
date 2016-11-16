@@ -4,12 +4,22 @@ import com.debs.model.ScoresModel;
 
 public class ScoreService {
 
-	private ScoresModel scoresModel = new ScoresModel();
+	private ScoresModel scoresModel; 
+	
+	public ScoreService(ScoresModel scoresModel) {
+		this.scoresModel = scoresModel;
+	}
+	
 	
 	public Long getPostScore(Long postId){
-//		return scoresModel.getPostMap().get(postId).getScore();
 		return 10L;
 	}
+	
+	public Long getPostOldScore(Long postId){
+		return scoresModel.getPostMap().get(postId).getScore();
+	}
+	
+	
 	
 	public Long getCommentScore(Long commentId){
 		return 10l;

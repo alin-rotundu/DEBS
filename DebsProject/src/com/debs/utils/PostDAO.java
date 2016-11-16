@@ -13,10 +13,10 @@ public class PostDAO {
 
 	public List<Post> getPosts(List<String> streams) throws ParseException{
 		List<Post> posts = new ArrayList<Post>();
-		DateFormat format = new SimpleDateFormat("yyyy-MM-dd:hh:mm:ss");
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZZ");
 		
 		for (String stream : streams) {
-			String [] data = stream.split("\\|\\|");
+			String [] data = stream.split("\\|");
 			Date timestamp = format.parse(data[0]);
 			Long id = Long.parseLong(data[1], 10);
 			Long userId = Long.parseLong(data[2], 10);

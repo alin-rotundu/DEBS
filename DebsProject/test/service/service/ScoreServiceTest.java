@@ -1,9 +1,7 @@
-package service;
+package service.service;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +19,7 @@ public class ScoreServiceTest {
 	
 	@BeforeClass
 	public static void init(){
-		scoreService = new ScoreService();
-		scoreService.setScoresModel(new ScoresModel());
+		scoreService = new ScoreService(new ScoresModel());
 		
 		Map<Long, Long> commentPostMap = new HashMap<Long, Long>();
 		Map<Long, Post> postMap = new HashMap<Long, Post>();

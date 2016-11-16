@@ -2,12 +2,17 @@ package com.debs.service;
 
 import java.util.ArrayList;
 
+import com.debs.model.Comment;
 import com.debs.model.Post;
 import com.debs.model.ScoresModel;
 
 public class MapService {
 
 	private ScoresModel scoresModel;
+	
+	public MapService (){
+		scoresModel = new ScoresModel();
+	}
 
 	public void updatePostScoreMap(Long newScore, Long oldScore, Long postId) {
 		
@@ -29,6 +34,10 @@ public class MapService {
 
 	public void updatePostMap(Post post) {
 		scoresModel.getPostMap().put(post.getId(), post);
+	}
+	
+	public void updateCommentMap(Comment comment) {
+		scoresModel.getCommentMap().put(comment.getId(), comment);
 	}
 
 	public void updateCommentPostMap(Long commentId, Long postId) {
