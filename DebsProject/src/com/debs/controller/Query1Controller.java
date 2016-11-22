@@ -53,6 +53,9 @@ public class Query1Controller {
 				Post postByCommentId = mapService.getScoresModel().getPostByCommentId(comment.getId());
 				mapService.updateCommentPostMap(comment.getId(), postByCommentId.getId());
 				//TODO update post score by its comments
+				
+				postByCommentId.setScore(postByCommentId.getScore() + comment.getScore());
+				
 				updatePostMaps(postByCommentId);
 			}
 			updateView();

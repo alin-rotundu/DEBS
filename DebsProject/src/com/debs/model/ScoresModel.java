@@ -39,7 +39,12 @@ public class ScoresModel extends Observable {
 	}
 
 	public Post getPostByCommentId(Long comment){
-		return postMap.get(commentPostMap.get(comment));
+		Long commentId = comment;
+		while(commentPostMap.get(commentId) != null){
+			commentId = commentPostMap.get(commentId);
+		}
+		
+		return postMap.get(commentId);
 	}
 
 	
