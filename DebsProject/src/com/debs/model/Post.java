@@ -2,18 +2,18 @@ package com.debs.model;
 
 import java.util.Date;
 
-public class Post {
+public class Post extends Event {
+	
 	private Long id;
 
 	private Long userId;
-
-	private Date timestamp;
 
 	private String username;
 
 	private String message;
 
 	private Long score;
+	
 	public Post() {
 	}
 
@@ -46,14 +46,6 @@ public class Post {
 		this.userId = userId;
 	}
 
-	public Date getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
-	}
-
 	public String getUsername() {
 		return username;
 	}
@@ -83,7 +75,4 @@ public class Post {
 		return "Post [id=" + id + ", userId=" + userId + ", timestamp=" + timestamp + ", username=" + username
 				+ ", message=" + message + ", score=" + score + "]";
 	}
-
-
-
 }

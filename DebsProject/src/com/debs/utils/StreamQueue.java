@@ -3,15 +3,22 @@ package com.debs.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StreamQueue {
+import com.debs.model.Event;
 
-	
+public class StreamQueue {
 
 	public  List<List<String>> divideStreams(List<String> streams, int divisions){
 		List<List<String>> queue;
 		queue = chopped(streams, divisions);
 		return queue;
 	}
+	
+	public  List<List<Event>> divideEventStreams(List<Event> streams, int divisions){
+		List<List<Event>> queue;
+		queue = chopped(streams, divisions);
+		return queue;
+	}
+	
 	private  <T> List<List<T>> chopped(List<T> list, final int L) {
 	    List<List<T>> parts = new ArrayList<List<T>>();
 	    final int N = list.size();

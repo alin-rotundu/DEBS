@@ -2,15 +2,13 @@ package com.debs.model;
 
 import java.util.Date;
 
-public class Comment {
+public class Comment extends Event{
 
 	private Long id;
 
 	private Long postId;
 
 	private Long userId;
-
-	private Date timestamp;
 
 	private String username;
 
@@ -64,14 +62,6 @@ public class Comment {
 		this.userId = userId;
 	}
 
-	public Date getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
-	}
-
 	public String getUsername() {
 		return username;
 	}
@@ -118,6 +108,4 @@ public class Comment {
 				+ ", username=" + username + ", message=" + message + ", commentReplied=" + commentReplied
 				+ ", postCommented=" + postCommented + ", score=" + score + "]";
 	}
-
-
 }

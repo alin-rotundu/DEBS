@@ -2,13 +2,17 @@ package com.debs.controller;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.debs.model.Comment;
+import com.debs.model.Event;
 import com.debs.model.Post;
 import com.debs.service.MapService;
 import com.debs.service.ScoreService;
 import com.debs.utils.CommentDAO;
+import com.debs.utils.EventComparator;
 import com.debs.utils.FileUtils;
 import com.debs.utils.PostDAO;
 import com.debs.utils.StreamQueue;
@@ -26,42 +30,87 @@ public class Query1Controller {
 	MapService mapService = new MapService();
 	ScoreService scoreService = new ScoreService(mapService.getScoresModel());
 
+
 	public Query1Controller(){
 		consoleView = new ConsoleView();
 	}
 	public void readAllPosts() throws IOException, ParseException{
+		
+		//Read all data from file
 		List<String> postsStreams = FileUtils.readFileToStream("resources/data/posts.dat");
 		List<String> commentsStreams = FileUtils.readFileToStream("resources/data/comments.dat");
+		
+		//Parse the raw data and create lists of objects
+		List<Post> posts = postDAO.getPosts(postsStreams);
+		List<Comment> comments = commentDAO.getComments(commentsStreams);
+		
+		//Merge data into a single list
+		List<Event> events = new ArrayList<Event>();
+		events.addAll(posts);
+		events.addAll(comments);
+		
+		//Sort the events by their timestamp
+		Collections.sort(events, new EventComparator());
+		
+		//Split the events into blocks of 300
+		List<List<Event>> dividedEventsStreams = streamQueue.divideEventStreams(events, 300);
+		
+		//While there are divided posts or comments do
+		int i = 0;
+		while( i < dividedEventsStreams.size() ) {
+			List<Event> currentEvents = dividedEventsStreams.get(i);
 
-		List<List<String>> dividedPostsStreams = streamQueue.divideStreams(postsStreams, 300);
-		List<List<String>> dividedCommentsStreams = streamQueue.divideStreams(commentsStreams, 300);
-
-		//while there are divided posts or comments do
-		//List<Post> posts = postDAO.getPosts(dividedStream);
-
-		int i = 0, j = 0;
-		while( i < dividedPostsStreams.size() || j < dividedCommentsStreams.size()) {
-			List<Post> posts = postDAO.getPosts(dividedPostsStreams.get(i));
-			List<Comment> comments = commentDAO.getComments(dividedCommentsStreams.get(i));
-
-			for(Post post : posts){
-				updatePostMaps(post);
-			}
-
-			for(Comment comment : comments){
-				mapService.updateCommentMap(comment);
-				Post postByCommentId = mapService.getScoresModel().getPostByCommentId(comment.getId());
-				mapService.updateCommentPostMap(comment.getId(), postByCommentId.getId());
-				//TODO update post score by its comments
+			for(Event event : currentEvents){
 				
-				postByCommentId.setScore(postByCommentId.getScore() + comment.getScore());
+				//Is Post
+				if (event instanceof Post) {
+					Post post;
+					
+					try {
+						post = (Post)event;
+					} 
+					catch (ClassCastException e) {
+						throw e;
+					}
+					
+					if (post != null){
+						updatePostMaps(post);
+					}
+					
+					continue;
+				}
 				
-				updatePostMaps(postByCommentId);
+				//Is Comment
+				if (event instanceof Comment) {
+					Comment comment;
+					
+					try {
+						comment = (Comment)event;
+					} 
+					catch (ClassCastException e) {
+						throw e;
+					}
+					
+					if (comment != null){
+						mapService.updateCommentMap(comment);
+						Post postByCommentId = mapService.getScoresModel().getPostByCommentId(comment.getId());
+						mapService.updateCommentPostMap(comment.getId(), postByCommentId.getId());
+						//TODO update post score by its comments
+						
+						postByCommentId.setScore(postByCommentId.getScore() + comment.getScore());
+						
+						updatePostMaps(postByCommentId);
+					}
+					
+					continue;
+				}				
 			}
+			
 			updateView();
+			i++;
 		}
-
-		if( i < dividedPostsStreams.size()){
+		
+		/*if( i < dividedEventsStreams.size()){
 			List<Post> posts = postDAO.getPosts(dividedPostsStreams.get(i));
 			for(Post post : posts){
 				updatePostMaps(post);
@@ -79,7 +128,7 @@ public class Query1Controller {
 				updatePostMaps(postByCommentId);
 			}
 			updateView();		
-		}
+		}*/
 	}
 	
 	private void updateView() {

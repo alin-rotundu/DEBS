@@ -28,9 +28,9 @@ public class CommentDAO {
 //			if(data[5].equals("-1") && data[6].equals("-1"))
 //				continue;
 			Long commentReplied = Long.parseLong(data[5], 10);
-			//Long postReplied = Long.parseLong(data[6], 10);
+			Long postReplied = data.length == 7 ? Long.parseLong(data[6], 10) : -1;
 
-			Comment comment = new Comment(timestamp, id, userId, data[3], data[4], commentReplied, -1L);
+			Comment comment = new Comment(timestamp, id, userId, data[3], data[4], commentReplied, postReplied);
 
 			comments.add(comment);
 		}
