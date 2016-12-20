@@ -84,8 +84,10 @@ public class Query1Controller{
 						}
 						
 						continue;
-					}				
-	            	
+					}			
+					
+					updateView();
+					
 	            	retryCounter = 0;
 	            }
 	            else{
