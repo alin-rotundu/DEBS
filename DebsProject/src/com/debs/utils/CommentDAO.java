@@ -37,4 +37,26 @@ public class CommentDAO {
 
 		return comments;
 	}
+	
+	public Comment getComment(String rawComment) throws ParseException{
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZZ");
+
+		String [] data = rawComment.split("\\|");
+		Date timestamp = format.parse(data[0]);
+		Long id = Long.parseLong(data[1], 10);
+		Long userId = Long.parseLong(data[2], 10);
+		if(data[5].isEmpty()) 
+			data[5] = "-1";
+//			if(data[6].isEmpty()) 
+//				data[6] = "-1";
+
+//			if(data[5].equals("-1") && data[6].equals("-1"))
+//				continue;
+		Long commentReplied = Long.parseLong(data[5], 10);
+		Long postReplied = data.length == 7 ? Long.parseLong(data[6], 10) : -1;
+
+		Comment comment = new Comment(timestamp, id, userId, data[3], data[4], commentReplied, postReplied);
+
+		return comment;
+	}
 }

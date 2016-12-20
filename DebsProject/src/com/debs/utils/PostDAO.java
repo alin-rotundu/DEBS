@@ -28,4 +28,17 @@ public class PostDAO {
 		
 		return posts;
 	}
+	
+	public Post getPost(String rawPost) throws ParseException{
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZZ");
+		
+		String [] data = rawPost.split("\\|");
+		Date timestamp = format.parse(data[0]);
+		Long id = Long.parseLong(data[1], 10);
+		Long userId = Long.parseLong(data[2], 10);
+			
+		Post post = new Post(timestamp, id, userId, data[3], data[4]);
+		
+		return post;
+	}
 }
