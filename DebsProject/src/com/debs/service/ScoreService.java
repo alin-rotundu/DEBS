@@ -33,5 +33,9 @@ public class ScoreService {
 		this.scoresModel = scoresModel;
 	}
 	
+	public void decreaseScores(Long amount){
+		scoresModel.decreasePostScores(amount);
+		scoresModel.degreaseCommentScores(amount);
+	}
 	
 }

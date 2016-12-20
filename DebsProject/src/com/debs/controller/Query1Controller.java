@@ -2,6 +2,7 @@ package com.debs.controller;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,6 +16,7 @@ import com.debs.model.RawEvent;
 import com.debs.service.MapService;
 import com.debs.service.ScoreService;
 import com.debs.utils.CommentDAO;
+import com.debs.utils.DateUtils;
 import com.debs.utils.EventComparator;
 import com.debs.utils.FileUtils;
 import com.debs.utils.PostDAO;
@@ -37,12 +39,20 @@ public class Query1Controller{
 
 	public void Start(){
 		int retryCounter = 0;
+		Date oldDate = null;
 		
 	    while(true){
     		try {
 	            if (!orderedEventsBlockingQueue.isEmpty()){ 
 	            	RawEvent event = orderedEventsBlockingQueue.take();
-
+	            	Date newDate = event.getTimestamp();
+	            	if(oldDate == null){
+	            		oldDate=newDate;
+	            	}
+	            	Long decreaseAmount = DateUtils.decreaseScoreByAmount(oldDate, newDate);
+	            	if(decreaseAmount > 0){
+	            		scoreService.decreaseScores(decreaseAmount);
+	            	}
 	            	//Is Post
 					if (event.getIsPost()) {
 						Post post = null; 
@@ -166,6 +176,7 @@ public class Query1Controller{
 		
 		//While there are divided posts or comments do
 		int i = 0;
+		
 		while( i < dividedEventsStreams.size() ) {
 			List<Event> currentEvents = dividedEventsStreams.get(i);
 

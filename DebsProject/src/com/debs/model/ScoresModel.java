@@ -18,6 +18,7 @@ public class ScoresModel extends Observable {
 
 	private Map<Long, Comment> commentMap;
 	
+	
 	public ScoresModel(){
 		commentPostMap = new HashMap<>();
 		postMap = new HashMap<>();
@@ -78,6 +79,32 @@ public class ScoresModel extends Observable {
 
 	public void setCommentMap(Map<Long, Comment> commentMap) {
 		this.commentMap = commentMap;
+	}
+	
+	public void decreasePostScores(Long amount){
+		for(Map.Entry<Long, Post> currentPost : this.postMap.entrySet()){
+			Long postScore = currentPost.getValue().getScore();
+			if(postScore > 0){
+				Long newPostScore = postScore - amount;
+				if(newPostScore < 0)
+					currentPost.getValue().setScore(0L);
+				else
+					currentPost.getValue().setScore(newPostScore);
+			}
+		}
+	}
+	
+	public void decreaseCommentScores(Long amount){
+		for(Map.Entry<Long, Comment> currentComment : this.commentMap.entrySet()){
+			Long commentScore = currentComment.getValue().getScore();
+			if(commentScore > 0){
+				Long newCommentScore = commentScore - amount;
+				if(newCommentScore < 0)
+					currentComment.getValue().setScore(0L);
+				else
+					currentComment.getValue().setScore(newCommentScore);
+			}
+		}
 	}
 
 
