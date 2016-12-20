@@ -33,4 +33,10 @@ public class DateUtils {
 		
 		return timestamp;
 	}
+    
+    public static Long decreaseScoreByAmount(Date oldDate, Date currentDate ){
+    	long diff = currentDate.getTime() - oldDate.getTime();
+		int numberOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+		return numberOfDays * 1L;
+    }
 }
