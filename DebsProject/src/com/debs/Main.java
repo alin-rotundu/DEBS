@@ -41,20 +41,9 @@ public class Main {
 		//start query1
 		try {
 			Thread.sleep(1000);
-			query1Controller.Start();
+			query1Controller.DisplayOrderedEventsIntoFile();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
-//		Query1Controller controller = new Query1Controller();
-//		controller.readAllPosts();
-		
-//		Post post = new Post();
-//		post.setScore(10L);
-//		post.setScore(9L);
-		
-//		Comment comment = new Comment();
-//		comment.setScore(7L);
-//		comment.setScore(6L);
 	}
 }
