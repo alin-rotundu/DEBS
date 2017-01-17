@@ -36,7 +36,9 @@ public class PostDAO {
 		Date timestamp = format.parse(data[0]);
 		Long id = Long.parseLong(data[1], 10);
 		Long userId = Long.parseLong(data[2], 10);
+			
 		Post post = new Post(timestamp, id, userId, data[3], data[4]);
+		
 		return post;
 	}
 }

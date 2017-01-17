@@ -22,6 +22,11 @@ public class CommentDAO {
 			Long userId = Long.parseLong(data[2], 10);
 			if(data[5].isEmpty()) 
 				data[5] = "-1";
+//			if(data[6].isEmpty()) 
+//				data[6] = "-1";
+
+//			if(data[5].equals("-1") && data[6].equals("-1"))
+//				continue;
 			Long commentReplied = Long.parseLong(data[5], 10);
 			Long postReplied = data.length == 7 ? Long.parseLong(data[6], 10) : -1;
 
@@ -42,6 +47,11 @@ public class CommentDAO {
 		Long userId = Long.parseLong(data[2], 10);
 		if(data[5].isEmpty()) 
 			data[5] = "-1";
+//			if(data[6].isEmpty()) 
+//				data[6] = "-1";
+
+//			if(data[5].equals("-1") && data[6].equals("-1"))
+//				continue;
 		Long commentReplied = Long.parseLong(data[5], 10);
 		Long postReplied = data.length == 7 ? Long.parseLong(data[6], 10) : -1;
 
