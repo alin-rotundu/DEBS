@@ -55,7 +55,7 @@ public class CommentsLoader implements Runnable{
             	if(fis != null)
             		fis.close();
             } catch (IOException ex) {
-            	System.out.println("Could not close file descriptors !");
+            	System.out.println("Could not close file descriptors!");
             }
         }
 	}

@@ -54,7 +54,7 @@ public class PostsLoader implements Runnable{
             		reader.close();
             	if(fis != null)
             		fis.close();
-            } catch (IOException exception) {
+            } catch (IOException ex) {
             	System.out.println("Could not close file descriptors!");
             }
         }
